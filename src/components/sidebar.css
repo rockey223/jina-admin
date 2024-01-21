@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+}
+.pra-sidebar-container{
+    display:flex;
+}
+main{
+    width: 100%;
+    padding: 20px;
+}
+.pra-sidebar{
+    background: #124578;
+    color: #fff;
+    height: 100vh;
+    width: 250px;
+    transition: all 0.5s;
+}
+.pra-top_section{
+    display: flex;
+    align-items:center;
+    padding:20px 15px;
+    justify-content: center;
+    height: 100px;
+}
+.pra-logo{
+    font-size: 30px;
+}
+.pra-bars{
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+}
+.pra-link{
+    display: flex;
+    color: #fff;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+.pra-link:hover{
+    background:lightskyblue;
+    color: #000;
+    transition: all 0.5s;
+}
+.pra-active{
+    background: lightskyblue;
+    color: #000;
+}
+.pra-link_text{
+    white-space: nowrap;
+}
+.pra-icon, .pra-link_text{
+    font-size: 20px;
+}
