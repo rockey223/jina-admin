@@ -18,7 +18,9 @@ input:-webkit-autofill:active{
 :root{
   --brand-color: #B98645;
   --heading-color: rgba(0,0,0,0.8);
+  --sidebar-text-color: rgba(0,0,0,0.75);
   --noto: "Noto Sans", sans-serif;
+  --light-bg-color: #F8F3ED;
 }
 
 a{
@@ -31,4 +33,5 @@ body {
   max-width: 1920px;
   font-family: var(--noto);
   margin: auto;
+  background-color: var(--light-bg-color);
 }

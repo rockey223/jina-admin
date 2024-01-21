@@ -1,56 +1,79 @@
-*{
-    margin:0;
-    padding:0;
-    text-decoration: none;
+.pra-sidebar-container {
+  display: flex;
 }
-.pra-sidebar-container{
-    display:flex;
+main {
+  width: 100%;
+  /* padding: 20px 0; */
 }
-main{
-    width: 100%;
-    padding: 20px;
+.pra-sidebar {
+  position: sticky;
+  left: 0;
+  top: 0;
+  /* background: #124578; */
+  background-color: var(--light-bg-color);
+  color: var(--sidebar-text-color);
+  height: 100vh;
+  width: 250px;
+  transition: all 0.5s;
 }
-.pra-sidebar{
-    background: #124578;
-    color: #fff;
-    height: 100vh;
-    width: 250px;
-    transition: all 0.5s;
+.pra-top_section {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  justify-content: center;
+  height: 100px;
 }
-.pra-top_section{
+.pra-logo {
+  font-size: 30px;
+}
+.pra-bars {
+  display: flex;
+  font-size: 25px;
+  margin-left: 50px;
+}
+.pra-icon {
+  color: #999999;
+}
+.pra-link {
+  display: flex;
+  color: #000;
+  padding: 10px 15px;
+  gap: 15px;
+  transition: all 0.5s;
+}
+.pra-link:hover {
+  background: var(--brand-color);
+  color: #fff;
+  transition: all 0.5s;
+  border-radius: 0 50px 50px 0;
+}
+.pra-link:hover .pra-icon {
+  color: #eeeeee;
+}
+.active .pra-icon {
+  color: #eeeeee;
+}
+.active {
+  background: var(--brand-color);
+  border-radius: 0 50px 50px 0;
+  color: #fff;
+  /* color: #000; */
+}
+.pra-link_text {
+  white-space: nowrap;
+}
+.pra-icon,
+.pra-link_text {
+  font-size: 20px;
+}
+
+.pra-top-bar{
+    background-color: var(--light-bg-color);
+    position: sticky;
+    top: 0;
+    height: 80px;
     display: flex;
-    align-items:center;
-    padding:20px 15px;
-    justify-content: center;
-    height: 100px;
-}
-.pra-logo{
-    font-size: 30px;
-}
-.pra-bars{
-    display: flex;
-    font-size: 25px;
-    margin-left: 50px;
-}
-.pra-link{
-    display: flex;
-    color: #fff;
-    padding: 10px 15px;
-    gap: 15px;
-    transition: all 0.5s;
-}
-.pra-link:hover{
-    background:lightskyblue;
-    color: #000;
-    transition: all 0.5s;
-}
-.pra-active{
-    background: lightskyblue;
-    color: #000;
-}
-.pra-link_text{
-    white-space: nowrap;
-}
-.pra-icon, .pra-link_text{
-    font-size: 20px;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 0 20px;
 }

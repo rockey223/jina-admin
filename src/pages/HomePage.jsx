@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <div style={{height: '100vh', backgroundColor: '#225547'}}>HomePage</div>
   )
 }
 
