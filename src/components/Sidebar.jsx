@@ -16,19 +16,20 @@ function getDate() {
   const today = new Date();
   console.log(new Date()); // Log the current date to the console
   const options = {
-    weekday: "long",
+    weekday: "short",
     year: "numeric",
-    month: "long",
+    month: "short",
     day: "numeric",
     hour: "numeric",
     minute: "numeric",
     hour12: true,
   };
 
-  const formattedDateTime = today.toLocaleDateString("en-US", options);
+  const formattedDateTime = today.toLocaleString("en-US", options);
   const formattedString = `${formattedDateTime}`;
   return formattedString;
 }
+
 const Sidebar = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
@@ -76,7 +77,7 @@ const Sidebar = ({ children }) => {
 
   return (
     <div className="pra-sidebar-container">
-      <div style={{ width: isOpen ? "250px" : "60px" }} className="pra-sidebar">
+      <div style={{ width: isOpen ? "250px" : "80px" }} className="pra-sidebar">
         <div className="pra-top_section">
           <h1
             style={{ display: isOpen ? "block" : "none" }}
